@@ -1,0 +1,100 @@
+body {
+    background-color: #00000b;
+    color: white;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    font: normal 21px Gill Sans, sans-serif;
+}
+
+.task-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 2px dotted red; */
+}
+
+.task-wrapper p {
+    text-align: justify;
+    padding: 0 0 20px 0;
+    border: 1px solid white;
+    border-width: 0 0 3px;
+}
+
+.result-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    /* border: 2px solid blue; */
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2, 1fr);  */
+    grid-row-gap: 0.5vw;
+    grid-column-gap: 1vw;
+    align-items: stretch;
+    
+}
+input {
+    outline: none;
+    background-color: inherit;
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 20px;
+    /* width: 90%; */
+    color: white;
+    transition: all 0.2s ease-out;
+    text-align: center;
+    font-size: 15px;
+}
+input:focus {
+    border-color: darkgrey;
+}
+#calculate, #show-pos {
+    grid-column: span 3;
+    cursor: pointer;
+    transition: all 0.04s linear;
+}
+#calculate:active, #show-pos:active {
+    border-color: red;
+}
+#example {
+    /* background-color: rgb(232, 229, 217); */
+    /* border: 2px solid yellow; */
+    padding: 0 auto;
+    /* filter: url('#myfilter'); */
+}
+#tip {
+    font-size: 12px;
+    font-weight: normal;
+}
+#chessboard {
+    position: relative;
+    display: grid;
+    width: 55%;
+    grid-template-columns: repeat(9, 50px);
+    margin: 0 auto;
+    
+}
+#chessboard div {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+::-webkit-input-placeholder {
+font-style: italic;
+}
+:-moz-placeholder {
+font-style: italic;
+}
+::-moz-placeholder {
+font-style: italic;
+}
+:-ms-input-placeholder {
+font-style: italic;
+}

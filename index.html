@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шахматные фигуры</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = 'container'>
+        <div class = 'task-wrapper'>
+            <h1>Курсовая работа</h1>
+            <p>
+                Создайте функцию, которая принимает имя шахматной фигуры, ее позицию, и целевую позицию. Функция должна возвращать true, если фигура может двигаться к цели, и false, если нет. Возможные значения: «Пешка», «Конь», «Слон», «Ладья», «Ферзь» и «Король». Не включайте рокировку. Не забудьте учесть ход пешек на два поля на второй горизонтали. Ищите закономерности в движении фигур.
+            </p>
+            <form>
+                <div class = "input-container">
+                    <span>Название фигуры</span>
+                    <span>Исходная позиция</span>
+                    <span>Целевая позиция</span>
+                    <input type="text" id = "piece-name">        
+                    <input type="text" id = "piece-position">
+                    <input type="text" id = "piece-target-position">
+                    <input type="button" id = "calculate" value = "Рассчитать">
+                    <input type="button" id = "show-pos" value = "Показать позицию">
+                </div>
+            </form>
+        </div>
+        <div class = 'result-wrapper'>
+            <div>
+                <span id = "tip"><i>*позиции вводите в формате официальной шахматной нотации (например, h3)</i></span><br>
+                <span id = "tip"><i>*допустимые названия фигур: Pawn, King, Queen, Rook, Bishop, Knight</i></span>
+                <p>
+                    Результат: <span id = "result"></span>
+                </p>
+                <div id = "board-container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type = 'module' src = 'main.js'>
+    </script>
+    <!-- <svg>
+        <filter id="myfilter">
+            <feFlood flood-color="#51c50f" flood-opacity="0.3"></feFlood>
+        </filter>
+    </svg> -->
+</body>
+</html>
