@@ -61,9 +61,9 @@ input:focus {
 #calculate:active, #show-pos:active {
     border-color: red;
 }
-#example {
+#board-container {
     /* background-color: rgb(232, 229, 217); */
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
     padding: 0 auto;
     /* filter: url('#myfilter'); */
 }
@@ -74,10 +74,9 @@ input:focus {
 #chessboard {
     position: relative;
     display: grid;
-    width: 55%;
+    width: fit-content;
     grid-template-columns: repeat(9, 50px);
     margin: 0 auto;
-    
 }
 #chessboard div {
     position: relative;
