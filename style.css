@@ -63,7 +63,7 @@ input:focus {
 }
 #board-container {
     /* background-color: rgb(232, 229, 217); */
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     padding: 0 auto;
     /* filter: url('#myfilter'); */
 }
